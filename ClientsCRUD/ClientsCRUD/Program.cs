@@ -33,6 +33,6 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 // for db tests
-app.MapGet("/", (ApplicationDbContext db) => db.clients.ToList());
+//app.MapGet("/", (ApplicationDbContext db) => db.clients.ToList());
 app.Run();
 

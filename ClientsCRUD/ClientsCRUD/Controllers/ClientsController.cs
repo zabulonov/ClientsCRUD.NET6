@@ -59,7 +59,7 @@ namespace ClientsCRUD.Controllers
 		// POST : Delete
 		[HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult DeletePost(int? id)
+        public IActionResult DeletePost	(int? id)
 		{
             var obj = _db.clients.Find(id);
             if (obj == null)

@@ -69,6 +69,16 @@ namespace ClientsCRUD.Controllers
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+		// GET : Edit
+
+		public IActionResult Edit(int? id)
+		{
+			if ((id == null) || (id == 0))
+				return NotFound();
+			// some test
+
+		}
     }
 }
 

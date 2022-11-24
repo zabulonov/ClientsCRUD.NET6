@@ -7,6 +7,8 @@
         <div class="form-group row">
             <h2 class="text-info pl-3">Delete Client</h2>
         </div>
+        </div>
+
         <div class="row">
             <div class="col-8">
                 <div class="form-group row">
@@ -26,6 +28,7 @@
                         <input asp-for="LastName" disabled class="form-control" />
                     </div>
 
+
                     <div class="form-group row">
                         <div class="col-4">
                             <label asp-for="PhoneNumber"></label>
@@ -42,19 +45,20 @@
                                 <input asp-for="Email" disabled class="form-control" />
                             </div>
 
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-8 offset-4 row">
+                            <div class="form-group row">
+                                <div class="col-8 offset-4 row">
 
-                                <div class="col">
-                                    <input type="submit" class="btn btn-danger w-100" value="Delete" />
-                                </div>
-                                <div class="col">
-                                    <a asp-action="Index" class="btn  btn-success w-100"><i class="fa-solid fa-rotate-left"></i>Back</a>
+                                    <div class="col">
+                                        <input type="submit" class="btn btn-danger w-100" value="Delete" />
+                                    </div>
+                                    <div class="col">
+                                        <a asp-action="Index" class="btn  btn-success w-100"><i class="fa-solid fa-rotate-left"></i>Back</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
             <div class="col-4">
                 @* Keep this empty *@
             </div>

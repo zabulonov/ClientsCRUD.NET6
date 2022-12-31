@@ -76,7 +76,13 @@ namespace ClientsCRUD.Controllers
 		{
 			if ((id == null) || (id == 0))
 				return NotFound();
-			// some test
+
+			var obj = _db.clients.Find(id);
+
+			if (obj == null)
+				return NotFound();
+
+			return View(obj);
 
 		}
     }
